@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TZA ManU TV</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e2c9faac31.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <!-- <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+</head>
+<body>
+    <!-- <i class="fa-solid fa-volume-high speaker"></i> -->
+    <div class="side-wrapper">
+        <div class="title-wrapper">THANT ZIN AUNG<br>Manchester United TV</div>
+        <div class="match-info-wrapper">
+            <div class="time-wrapper">10 : 00 PM</div>
+            <div class="match-info">Arsenal - Manchester United</div>
+        </div>
+        <div class="desc-wrapper">
+            This live tv channel was provided for only manchester united fans. All the content included in this live stream was encrypted and not allowed for any commercial use. Anyone who are devoted all of their efforts and life can watch this stream for free without any restriction. This channel was released in 2023 and developed by freelance Java developer - <span>Thant Zin Aung (Blacksky)</span>.
+        </div>
+        <div class="button-wrapper">
+            <div class="watch-button button"><i class="fa-solid fa-play"></i> Watch Stream</div>
+            <div class="detail-button button"><i class="fa-regular fa-circle-play"></i> Play Music</div>
+        </div>
+    </div>
+
+    <div class="player-wrapper">
+        <div class="video-wrapper">
+            <video id="player" playsinline controls data-poster="poster.jpg" style="background-image: url('https://e0.365dm.com/23/06/2048x1152/skysports-man-utd-fixtures_6186976.jpg'); --plyr-color-main: red; ">
+                <source src="https://live.vfantasy.net/channel/sky2/playlist.m3u8" type="application/mpegURL"/>
+            </video>
+            <div class="close-button"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <!-- <div class="plyr__video-embed" id="player">
+            <iframe
+              src="https://player.livepush.io/emv_NJTYNq6EX"
+              allowfullscreen
+              allowtransparency
+              allow="autoplay"
+            ></iframe>
+        </div> -->
+    </div>
+
+    <audio src="background-music.mp3" loop></audio>
+
+
+    <script src="hls.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.js"></script> -->
+    <script src="app-script.js"></script>
+</body>
+</html>
